@@ -59,3 +59,6 @@ for i in sorted(mbr.keys(),reverse=1): # далее собираем много�
 s=' + '.join(members)+' = 0'
 s=s.replace('+ -','- ') if '+ -' in s else s # доводка отриц.значений
 print('Сумма:',s)
+f = open('files\\task_4-5_f_res.txt', 'w', encoding="utf-8")
+f.write(s)
+f.close()
